@@ -1,0 +1,39 @@
+
+// // --------------cursivas-------------------------
+// $F-c-feliz: "Chilanka",
+// cursive;
+// $F-c-feliz-delado: "Indie Flower",
+// cursive;
+// $F-c-feliz-fina: "Caveat",
+// cursive;
+// // ------------------corrida------------------------
+// $F-b-decorrida: "Satisfy",
+// cursive;
+// font-family:
+// font-family:
+// font-family:
+// font-family:
+// font-family:
+// font-family:
+// font-family: 'Kaushan Script', cursive;
+// font-family:
+// ------------------serif-------------------
+// $F-s-cursiva-fina_noUsar_: "Livvic",
+// sans-serif;
+$F-s-fina: "Quicksand",
+sans-serif;
+$F-s-normal: "Red Hat Display",
+sans-serif;
+$F-s-scrit-tipo-periodico: "Libre Baskerville",
+serif;
+$F-s-scrit-tipo-periodico-fina: "Cinzel",
+serif;
+$F-s-scrit-tipo-periodico-fina-decorada: "Cinzel Decorative",
+cursive;
+
+
+ <style>
+        @import url('https://fonts.googleapis.com/css?family=Caveat|Chilanka|Cinzel|Cinzel+Decorative|Indie+Flower|Kaushan+Script|Libre+Baskerville|Livvic|Quicksand|Red+Hat+Display|Satisfy&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Chilanka|Cinzel|Cinzel+Decorative|Indie+Flower|Kaushan+Script|Libre+Baskerville|Livvic|Quicksand|Red+Hat+Display|Satisfy&display=swap" rel="stylesheet">
+    

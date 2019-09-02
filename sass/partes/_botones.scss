@@ -1,0 +1,101 @@
+// //centrado absoluto del contenido
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// text-align: center;
+// -------
+// //borde (para visualizar limites)
+// border: 2px solid black;
+// -------
+// //no se pa que
+// .......hori-vert-difumi--extension..color
+// box-shadow: 0 0 0 0 %anarilloClient;
+@import "../recursos/colores";
+@import "../recursos/ordenado";
+@mixin botonAll ($color-del-boton) {
+    $boton-bg: $color-del-boton;
+    // background: $boton-bg;
+    background: linear-gradient($boton-bg, darken($boton-bg, 2));
+    // -----------------
+    display: inline-block;
+    line-height: 2em;
+    height: 2em;
+    @include center;
+    // para el espaciado
+    padding: 0 0.5em;
+    // ------------------
+    font-family: $S-SemiFina-Mayus;
+    font-size: 1.6em;
+    color: $humo;
+    text-align: center;
+    text-decoration: none;
+    // ---------------cositas
+    text-transform: uppercase;
+    border-radius: .8em; //la mitad de la altura para darle forma de ovalo
+    // --------------agregados
+    border: 1px solid ($negro333, .2);
+    &:hover {
+        // pasas el mouse
+        background: darken($boton-bg, 5)
+    }
+    &:active {
+        // segundo que haces click
+        transform: scale(.5em);
+        line-height: 1.85em;
+    }
+}
+
+.boton-lila {
+    @include botonAll($lilaInicio);
+}
+
+.boton-verde {
+    @include botonAll($verdeSialto);
+}
+
+.boton-rojo {
+    @include botonAll($rojoNo);
+}
+
+.toggle-button {
+    $off-color: red;
+    $on-color: green;
+    $front-color: #000;
+    $size: 6rem;
+    $transition: all .3s;
+    // ------------------------------
+    display: none;
+    +label {
+        // ------posicion---
+        display: block;
+        width: $size *2;
+        height: $size;
+        @include center;
+        // ------adornos---
+        background: rgba($off-color, .5);
+        border-radius: $size/2;
+        box-shadow: 0 0 0 2px rgba($front-color, .5);
+        // ------animaciones---
+        transition: $transition;
+        &:before {
+            // ------modelo de cajas---
+            content: "";
+            width: $size;
+            height: $size;
+            // ------visuales---
+            border-radius: 50%;
+            background: $off-color;
+            // ------trans---
+            transition: $transition;
+        }
+    }
+    &:checked {
+        +label {
+            background: rgba($on-color, .5);
+            &:before {
+                left: $size;
+                background: $on-color
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+// ------------------NEW PRODUCT
+.galeria-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background: $diaPanel;
+    // // -----------------------
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    // // -----------------------
+    .galeria-iten {
+        box-sizing: border-box; //que los bordes no jodan 
+        margin: 1em;
+        width: calc(50% - 2em);
+        // ------------------
+        // algunos efectos
+        overflow: hidden;
+        border: 1px solid rgba($humo, .7);
+        cursor: pointer;
+        // ----------------------
+        // position: relative;
+        // ------------------
+        @media screen and (min-width: 600px) {
+            width: calc(33.33% - 2em);
+        }
+        @media screen and (min-width: 1000px) {
+            width: calc(25% - 2em);
+        }
+        img {
+            display: block; //los bloques no tienen esapcio de linea
+            transition: all .2s;
+            // --------------
+            width: 100%;
+            height: 100%;
+            transform: scale(1.2);
+            // --------------
+            &:hover {
+                transform: scale(1.4);
+                // rotate(5deg);
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $negro333; //rgba($negro333, .8);
+                // opacity: 100%;
+            }
+        }
+    }
+}

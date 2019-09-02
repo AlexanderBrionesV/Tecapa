@@ -1,0 +1,54 @@
+// ------------recursos-----------
+@import "recursos/colores";
+@import "recursos/fuentes";
+@import "recursos/ordenado";
+// ------------partes-----------
+@import "partes/botones";
+// ------------paginass-----------
+// ------------productos-----------
+@import "paginas/producto/NewProduct";
+// -----------------------------
+body {
+    // ------------------
+    // align-content: center;
+    margin: 2em auto;
+    text-align: center;
+    // ------------------
+    $colorFondo: $dia;
+    $colorLetra: $diaLetra;
+    background: $colorFondo;
+    margin: 0;
+    padding: 0;
+    // ----------------------
+    .pagina {
+        width: 80%;
+        margin: 2em auto;
+        text-align: center;
+        // ------------------
+        p {
+            font-family: $S-Gruesa-Mayus;
+            font-size: 30px;
+            color: $colorLetra;
+        }
+        h1 {
+            font-family: $S-textoTitulo2;
+            font-size: 18px;
+            color: $colorLetra;
+            &:hover {
+                font-size: 19px;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        font-family: $S-textoTitulo2;
+        font-size: 18px;
+        color: $colorLetra;
+        &:hover {
+            font-size: 19px;
+        }
+    }
+}
+
+// display: inline-block para que aparesca mas de uno en una franja de la pantalla
+// display: block        para que aparesca solo uno en una franja de la pantalla

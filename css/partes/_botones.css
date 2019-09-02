@@ -1,0 +1,18 @@
+.boton {
+  display: inline-block;
+  background: #8972FF;
+  line-height: 3em;
+  height: 3em;
+  padding: 0 1.5em;
+  color: #202124;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: .3em;
+  border: 1px solid #202124, 0.2;
+  font-size: 1.2em; }
+  .boton:hover {
+    background: #7459ff; }
+  .boton:actice {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95); }
