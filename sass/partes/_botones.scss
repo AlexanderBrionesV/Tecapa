@@ -13,6 +13,7 @@
 @import "../recursos/colores";
 @import "../recursos/ordenado";
 @mixin botonAll ($color-del-boton) {
+    cursor: pointer;
     $boton-bg: $color-del-boton;
     // background: $boton-bg;
     background: linear-gradient($boton-bg, darken($boton-bg, 2));

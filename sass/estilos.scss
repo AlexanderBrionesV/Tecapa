@@ -4,6 +4,7 @@
 @import "recursos/ordenado";
 // ------------partes-----------
 @import "partes/botones";
+@import "partes/imagenes";
 // ------------paginass-----------
 // ------------productos-----------
 @import "paginas/producto/NewProduct";
@@ -47,6 +48,12 @@ body {
         &:hover {
             font-size: 19px;
         }
+    }
+    .mibody100 {
+        width: 100%;
+    }
+    .mibody80 {
+        width: 80%;
     }
 }
 
